@@ -1,0 +1,44 @@
+using System;
+					
+public class RadixSort
+{
+    public static void Main()
+    {
+        
+    }
+
+    public int [] radixSort(int[] radix)
+    {
+
+        List<List<int>> buckets = new List<List<int>>();
+
+        for (int i = 0; i < 10; i++) { 
+            buckets.Add(new List<int>());
+        
+        }
+
+        for (int i = 0; i < radix.Length; i++)
+        {
+            int lastDigit = radix[i] % 10;
+            buckets[lastDigit].Add(radix[i]);
+
+        }
+
+        int[] newRadix = new int[radix.Length];
+
+        int count = 0;
+
+        for (int i = 0; i < buckets.Count; i++)
+        {
+            for (int j = 0; j < buckets[i].Count; j++) {
+
+                newRadix[count] = buckets[i][j];
+                count++;
+
+            }
+
+        }
+
+        return newRadix;
+    }
+}

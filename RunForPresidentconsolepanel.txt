@@ -1,0 +1,32 @@
+class RunForPresident
+{
+
+    public static void Main(String [] args)
+    {
+        Console.WriteLine("Are You a natural Born Citizen?");
+
+        String Citizen = Console.ReadLine();
+
+        Console.WriteLine("What is your Age?");
+        int Age = Int32.Parse(Console.ReadLine());
+
+        Console.WriteLine("How many years have u lived in the US?");
+        int yearsLived = Int32.Parse(Console.ReadLine());
+
+        Console.WriteLine("How many priors terms have u served?");
+        int Terms = Int32.Parse(Console.ReadLine());
+
+        Console.WriteLine("Have u ever rebelled against the US?");
+        String rebelled = Console.ReadLine();
+
+        if (Citizen.ToLower() == "yes" && Age >= 35 && yearsLived >= 14 && Terms <= 2 && rebelled.ToLower() == "no")
+        {
+            Console.WriteLine("You are eligible to serve as president");
+        }
+        else
+        {
+            Console.WriteLine("You can NOT be president");
+        }
+    }
+
+}

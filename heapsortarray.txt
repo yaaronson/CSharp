@@ -1,0 +1,46 @@
+using System;
+
+public class HeapSort
+{
+	public int HeapSort(int[] heaps)
+	{
+
+		for (int i = 1; i < heaps.length; i++) {
+
+			Heapify(heaps[i], i);
+		
+		}
+	}
+
+
+	public void Heapify(int[] heapToBeSorted, int parent)
+	{
+
+		int left = 2 * parent;
+        int right = 2 * parent + 1;
+
+		if (parent > left && parent > right) {
+			return;
+		}
+
+		if (parent < left) {
+
+            int change = heapToBeSorted[parent];
+            heapToBeSorted[parent] = heapToBeSorted[left];
+            heapToBeSorted[left] = change;
+			Heapify(heapToBeSorted, left);
+			return;
+
+        }
+
+        if (parent < right)
+        {
+            int change = heapToBeSorted[parent];
+            heapToBeSorted[parent] = heapToBeSorted[right];
+            heapToBeSorted[right] = change;
+			Heapify(heapToBeSorted, right);
+			return;
+        }
+
+    }
+}

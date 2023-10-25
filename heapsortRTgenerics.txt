@@ -1,0 +1,139 @@
+using System;
+
+class TestProgram
+{
+    public static void Main()
+    {
+        int[] heap = { 12, 11, 13, 5, 6, 7 };
+
+        RecursiveTreeHeapSort<int> sort = new RecursiveTreeHeapSort<int>();
+        sort.RecursiveHeapSort(heap);
+
+        Console.WriteLine("The Sorted array:");
+        PrintArray(heap);
+    }
+
+    public static void PrintArray(int[] nums)
+    {
+        foreach (var item in nums)
+        {
+            Console.Write(item + " ");
+        }
+        Console.WriteLine();
+    }
+}
+
+class Node<T> where T : IComparable<T>
+{
+    public T data;
+    public Node<T> left;
+    public Node<T> right;
+    public Node<T> parent;
+
+    public Node(T data)
+    {
+        this.data = data;
+    }
+
+    public Node<T> Heapify()
+    {
+        Node<T> largest = this;
+        Node<T> left = this.left;
+        Node<T> right = this.right;
+
+        if (left != null && left.data.CompareTo(largest.data) > 0)
+        {
+            largest = left;
+        }
+
+        if (right != null && right.data.CompareTo(largest.data) > 0)
+        {
+            largest = right;
+        }
+
+        if (largest != this)
+        {
+            T temp = this.data;
+            this.data = largest.data;
+            largest.data = temp;
+
+            if (largest.parent != null && largest.parent.data.CompareTo(largest.data) < 0)
+            {
+                largest.parent.Heapify();
+            }
+        }
+
+        return largest;
+    }
+
+    public void Add(Node<T> head)
+    {
+        if (head == null)
+        {
+            return;
+        }
+
+        if (right == null && left == null)
+        {
+            left = head;
+            this.Heapify();
+
+        }
+
+        else if (left == null)
+        {
+            left = head;
+            this.Heapify();
+        }
+        else if (right == null)
+        {
+            right = head;
+            this.Heapify();
+        }
+        else
+        {
+            right.Add(head);
+        }
+    }
+}
+
+class RecursiveTreeHeapSort<T> where T : IComparable<T>
+{
+    public void RecursiveHeapSort(T[] arr)
+    {
+        int n = arr.Length;
+        for (int i = n / 2 - 1; i >= 0; i--)
+            Heapify(arr, n, i);
+
+        for (int i = n - 1; i >= 0; i--)
+        {
+            T temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
+
+            Heapify(arr, i, 0);
+        }
+    }
+
+    private void Heapify(T[] arr, int n, int i)
+    {
+        int largest = i;
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+
+        if (left < n && arr[left].CompareTo(arr[largest]) > 0)
+            largest = left;
+
+        if (right < n && arr[right].CompareTo(arr[largest]) > 0)
+            largest = right;
+
+        if (largest != i)
+        {
+            T swap = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = swap;
+
+            Heapify(arr, n, largest);
+        }
+    }
+}
