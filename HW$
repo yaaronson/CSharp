@@ -1,0 +1,133 @@
+// QUESTION 1
+
+
+public class Node
+{
+
+    public int data;
+    public Node next;
+
+}
+
+class toStrings
+{
+
+    public String toString(Node one)
+    {
+
+        if (one == null)
+        {
+
+            return " ";
+        }
+
+        return one.data + toString(one.next);
+    }
+
+
+}
+
+
+// QUESTION 2
+
+public class Nodes
+{
+
+    public int data;
+    public Nodes [] next;
+
+}
+
+class BinaryLL
+{
+    public bool Search(Nodes one, int two)
+    {
+
+        if (one == null)
+        { 
+            return false;
+        }
+
+        for (int i = 0; i < one.next.Length; i++) { 
+        
+            if (two == one.next[i].data)
+            {
+                return true;
+            }
+        }
+        for (int i = 0; i < one.next.Length; i++)
+        {
+            if (Search(one.next[i], two) == true) {
+
+                return true;
+            
+            }
+        }
+        return false;
+
+    }
+}
+
+
+
+
+//--------- Question 3
+
+
+public class Node2
+{
+
+    public int data;
+    public Node2 next;
+
+}
+
+class CirclyLL
+{
+
+    public int Size(Node2 current, Node2 head = null, int amountOfNodes = 1)
+    {
+
+        if (head == current)
+        {
+            return amountOfNodes;
+        }
+
+        if (head == null)
+        {
+            head = current;
+        }
+
+        return Size(current.next, head, amountOfNodes + 1);
+    }
+}
+
+
+//--Question 4
+
+
+class RecursiveShellSort
+{
+    public void ShellSort(int[] arr, int split)
+    {
+        if (split > 0)
+        {
+            for (int i = split; i < arr.Length; i++)
+            {
+                int temp = arr[i];
+                int j = i;
+
+                while (j >= split && arr[j - split] > temp)
+                {
+                    arr[j] = arr[j - split];
+                    j -= split;
+                }
+
+                arr[j] = temp;
+            }
+
+            ShellSort(arr, split / 2);
+        }
+    }
+
+}
