@@ -22,24 +22,24 @@ namespace Powerball2
 
             this.Paint += new PaintEventHandler(CSorter_Paint);
 
-
-            
             Button btnSort = new Button();
             btnSort.Text = "Sort";
             btnSort.Location = new Point(100, 300);
-            btnSort.Click += new EventHandler(btnSort_Click);
+            btnSort.Size = new Size(100, 50);
+            btnSort.Click += new EventHandler(btnSortClick);
             this.Controls.Add(btnSort);
 
             Button reset = new Button();
             reset.Text = "Reset";
-            reset.Location = new Point(300, 300); 
+            reset.Location = new Point(300, 300);
+            reset.Size = new Size(100, 50);
             reset.Click += new EventHandler(resetSort);
             this.Controls.Add(reset);
 
         
             timer = new System.Windows.Forms.Timer();
             timer.Interval = 100; 
-            timer.Tick += new EventHandler(timer_Tick);
+            timer.Tick += new EventHandler(timerTick);
         }
 
         private void InitializeNumbers()
@@ -48,7 +48,7 @@ namespace Powerball2
             numbers = new int[10];
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = random.Next(10, 100); // Generates random numbers between 10 and 100
+                numbers[i] = random.Next(10, 100); 
             }
             currentIndex = 0;
         }
@@ -77,7 +77,7 @@ namespace Powerball2
         private void RefreshDisplay()
         {
             this.Refresh();
-            System.Threading.Thread.Sleep(100); // Adjust the delay for visualization speed
+            System.Threading.Thread.Sleep(100); 
         }
 
         private void CSorter_Paint(object sender, PaintEventArgs e)
@@ -96,7 +96,7 @@ namespace Powerball2
             }
         }
 
-        private void btnSort_Click(object sender, EventArgs e)
+        private void btnSortClick(object sender, EventArgs e)
         {
             timer.Start();
         }
@@ -107,7 +107,7 @@ namespace Powerball2
             this.Refresh();
         }
 
-        private void timer_Tick(object sender, EventArgs e)
+        private void timerTick(object sender, EventArgs e)
         {
             BubbleSortStep();
         }

@@ -12,6 +12,7 @@ namespace Powerball2
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new CSorter());
+            Application.Run(new Form1());
         }
     }
 }
