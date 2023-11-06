@@ -14,3 +14,4 @@ C:\Users\Yisrael\Documents\C# - Fried\Powerball2\obj\Debug\net6.0-windows\refint
 C:\Users\Yisrael\Documents\C# - Fried\Powerball2\obj\Debug\net6.0-windows\Powerball2.pdb
 C:\Users\Yisrael\Documents\C# - Fried\Powerball2\obj\Debug\net6.0-windows\Powerball2.genruntimeconfig.cache
 C:\Users\Yisrael\Documents\C# - Fried\Powerball2\obj\Debug\net6.0-windows\ref\Powerball2.dll
+C:\Users\Yisrael\Documents\C# - Fried\Powerball2\obj\Debug\net6.0-windows\Powerball2.CSorter.resources
