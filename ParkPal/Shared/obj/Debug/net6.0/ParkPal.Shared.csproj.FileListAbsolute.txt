@@ -1,0 +1,11 @@
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\bin\Debug\net6.0\ParkPal.Shared.deps.json
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\bin\Debug\net6.0\ParkPal.Shared.dll
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\bin\Debug\net6.0\ParkPal.Shared.pdb
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\obj\Debug\net6.0\ParkPal.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\obj\Debug\net6.0\ParkPal.Shared.AssemblyInfoInputs.cache
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\obj\Debug\net6.0\ParkPal.Shared.AssemblyInfo.cs
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\obj\Debug\net6.0\ParkPal.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\obj\Debug\net6.0\ParkPal.Shared.dll
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\obj\Debug\net6.0\refint\ParkPal.Shared.dll
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\obj\Debug\net6.0\ParkPal.Shared.pdb
+C:\Users\Yisrael\Documents\C# - Fried\ParkPal\Shared\obj\Debug\net6.0\ref\ParkPal.Shared.dll

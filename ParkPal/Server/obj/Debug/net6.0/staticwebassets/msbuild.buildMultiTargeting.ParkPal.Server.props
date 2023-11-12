@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ParkPal.Server.props" />
+</Project>
