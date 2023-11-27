@@ -1,0 +1,15 @@
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\bin\Debug\net8.0\ReverseJokesHW.exe
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\bin\Debug\net8.0\ReverseJokesHW.deps.json
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\bin\Debug\net8.0\ReverseJokesHW.runtimeconfig.json
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\bin\Debug\net8.0\ReverseJokesHW.dll
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\bin\Debug\net8.0\ReverseJokesHW.pdb
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ReverseJokesHW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ReverseJokesHW.AssemblyInfoInputs.cache
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ReverseJokesHW.AssemblyInfo.cs
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ReverseJokesHW.csproj.CoreCompileInputs.cache
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ReverseJokesHW.sourcelink.json
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ReverseJokesHW.dll
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\refint\ReverseJokesHW.dll
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ReverseJokesHW.pdb
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ReverseJokesHW.genruntimeconfig.cache
+C:\Users\Yisrael\Documents\C# - Fried\ReverseJokesHW\obj\Debug\net8.0\ref\ReverseJokesHW.dll
