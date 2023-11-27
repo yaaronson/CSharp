@@ -6,7 +6,6 @@ using System;
 public class ReverseJokes
 {
 
-
     public void reverseFile()
     {
         string jokes = readFile();
