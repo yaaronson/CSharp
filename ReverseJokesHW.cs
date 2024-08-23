@@ -4,6 +4,7 @@ public class ReverseJokes
 {
 
 
+	
     public string reverseFile()
     {
         string jokes = readFile();
